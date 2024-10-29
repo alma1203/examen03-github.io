@@ -1,4 +1,3 @@
-/* Estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -6,33 +5,32 @@
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Cambiada a una fuente más moderna */
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6;
-    background-color: #f0f0f0; /* Fondo más claro */
+    background-color: #f0f0f0;
 }
 
-/* Barra de navegación */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background-color: rgba(30, 30, 30, 0.9); /* Color de fondo más oscuro */
+    background-color: rgba(30, 30, 30, 0.9);
     z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px; /* Más espacio en la barra */
+    padding: 15px 30px;
 }
 
 .logo {
-    color: #ffcc00; /* Color amarillo para destacar el logo */
+    color: #ffcc00;
     font-size: 2em;
     font-weight: bold;
-    transition: transform 0.3s; /* Efecto de hover en el logo */
+    transition: transform 0.3s;
 }
 
 .logo:hover {
-    transform: scale(1.05); /* Efecto de zoom en hover */
+    transform: scale(1.05);
 }
 
 nav ul {
@@ -45,18 +43,17 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff; /* Color blanco */
+    color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2em; /* Tamaño de fuente mayor */
-    transition: color 0.3s; /* Transición suave para hover */
+    font-size: 1.2em;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #ffcc00; /* Color amarillo en hover */
+    color: #ffcc00;
 }
 
-/* Estilo para secciones parallax */
 .parallax {
     height: 100vh;
     background-attachment: fixed;
@@ -70,7 +67,6 @@ nav ul li a:hover {
     text-align: center;
 }
 
-/* Parallax específico para las secciones */
 #parallax-1 {
     background-image: url('Imagen.jpg');
 }
@@ -79,34 +75,31 @@ nav ul li a:hover {
     background-image: url('Imagen4.jpg');
 }
 
-/* Sección de contenido normal */
 .content-section {
     height: 100vh;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 40px; /* Más espacio */
+    padding: 40px;
 }
 
 .content-section h2,
 .content-section p {
-    color: #333333; /* Color gris oscuro */
+    color: #333333;
 }
 
-/* Estilos para el contenido parallax */
 .content {
     text-align: center;
     color: white;
     animation: fadeIn 2s ease-out;
 }
 
-/* Animación para el contenido */
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(20px); /* Ajustado para suavidad */
+        transform: translateY(20px);
     }
     100% {
         opacity: 1;
@@ -114,9 +107,8 @@ nav ul li a:hover {
     }
 }
 
-/* Estilos del botón de llamada a la acción */
 .btn-cta {
-    background-color: #ff7e5f; /* Color de fondo más suave */
+    background-color: #ff7e5f;
     color: white;
     border: none;
     padding: 15px 30px;
@@ -124,23 +116,21 @@ nav ul li a:hover {
     cursor: pointer;
     margin-top: 20px;
     border-radius: 5px;
-    transition: background-color 0.3s ease, transform 0.3s; /* Agregado efecto de zoom */
+    transition: background-color 0.3s ease, transform 0.3s;
 }
 
 .btn-cta:hover {
     background-color: #e0694f;
-    transform: scale(1.05); /* Efecto de zoom en hover */
+    transform: scale(1.05);
 }
 
-/* Footer */
 footer {
     background-color: #333333;
     color: white;
     text-align: center;
-    padding: 30px 0; /* Mayor espacio en el footer */
+    padding: 30px 0;
 }
 
-/* Sección de contenido */
 .content-section {
     display: flex;
     flex-direction: column;
@@ -152,39 +142,35 @@ footer {
 }
 
 .content-section h1 {
-    font-size: 3em; /* Tamaño de fuente mayor */
+    font-size: 3em;
     margin-bottom: 30px;
     width: 100%;
 }
-
 
 .galeria {
     max-width: 1200px;
     margin: 0 auto;
 }
 
-/* Grid */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Ajustado el tamaño mínimo */
-    gap: 20px; /* Menor espaciado entre elementos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
     padding: 20px;
 }
 
-/* Elemento del grid */
 .grid-item {
     position: relative;
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra más suave */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease;
 }
 
 .grid-item:hover {
     transform: scale(1.05);
 }
-
 
 .grid-item img {
     width: 100%;
@@ -193,14 +179,13 @@ footer {
     transition: transform 0.4s ease-in-out;
 }
 
-
 .overlay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo más ligero */
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     opacity: 0;
     display: flex;
@@ -222,16 +207,14 @@ footer {
     color: white;
 }
 
-/* Hover animaciones */
 .grid-item:hover img {
-    transform: scale(1.1); /* Menos zoom para la imagen */
+    transform: scale(1.1);
 }
 
 .grid-item:hover .overlay {
     opacity: 1;
 }
 
-/* Animación de entrada */
 @keyframes fadeInUp {
     0% {
         opacity: 0;
@@ -246,8 +229,8 @@ footer {
 .contact-form {
     max-width: 800px;
     margin: 30px auto;
-    padding: 40px; /* Más espacio */
-    background: #ffffff; /* Fondo blanco */
+    padding: 40px;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
@@ -263,7 +246,7 @@ footer {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 15px; /* Más espacio */
+    padding: 15px;
     margin-top: 8px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -272,32 +255,35 @@ footer {
 
 .contact-form textarea {
     resize: vertical;
-    min-height: 150px; /* Mayor altura mínima */
+    min-height: 150px;
 }
 
 .contact-form button {
     margin-top: 20px;
-    padding: 15px 30px; /* Botón más grande */
+    padding: 15px 30px;
     border: none;
     background-color: #333333;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
     font-size: 1.1em;
-    transition: background-color 0.3s ease, transform 0.3s; /* Agregado efecto de zoom */
+    transition: background-color 0.3s ease, transform 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #555;
-    transform: scale(1.05); /* Efecto de zoom en hover */
+    transform: scale(1.05);
 }
+
 .video-container {
-    text-align: center;
-    margin-bottom: 20px;
-    opacity: 0; /* Inicia invisible */
-    animation: fadeIn 1s forwards; /* Animación de aparición */
+    overflow: hidden;
+    border-radius: 10px;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+
+.video-container.show {
+    opacity: 1;
+    transform: scale(1);
 }
